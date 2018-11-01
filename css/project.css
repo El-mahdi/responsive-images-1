@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+/* You must use a DIFFERENT FONT THAT THIS ONE as your webfont */
+
+/*************************************************
+            DEFAULTS
+*************************************************/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+html{
+    font-size: 16px;
+    font-family: Lato, Palatino, serif;
+    /* change this font stack to your own choices */
+    line-height: 1.5;
+    color: hsl(0, 0%, 0%);
+   
+}
+p{
+    margin: 1rem 0;
+    
+}
+a{
+    
+}
+ul{
+    
+}
+ol{
+    
+}
+li{
+    
+}
+img{
+    width: 30%;
+    height: auto;
+}
+
+/*************************************************
+            HEADER
+*************************************************/
+header{
+    padding:1rem 2rem;
+    color: black;
+    background-color: hsl(273, 1%, 93%);
+    border-top: 1rem solid blue;
+    background-image: url(../img/whitegirl.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+header > h1{
+    z-index: 10;
+    color: hsl(0, 100%, 60%);
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px #000, -1px 0 0 #000;
+}
+header > h2{
+    color:hsl(0, 100%, 74%);
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px #000, -1px 0 0 #000;
+}
+.mainnav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: lightgrey;
+    padding-bottom: 2rem;
+    padding-top: none;
+    font-size: 1.3rem
+}
+
+/*************************************************
+            NAVMENU
+*************************************************/
+nav{
+    padding:1rem 2rem;
+}
+nav > a,
+nav > a:visited,
+nav > a:link{
+    
+}
+nav > a:active,
+nav > a:focus,
+nav > a:hover{
+    
+}
+
+/*************************************************
+            MAIN CONTENT
+*************************************************/
+main{
+    padding:1rem 2rem;
+
+}
+section{
+    
+}
+section p{
+    flex-wrap: 
+}
+section p img{
+    float:inherit;
+}
+ 
+
+section h1{
+    color: hsl(239, 93%, 71%)
+}
+section h2{
+    color: hsl(239, 93%, 71%)
+}
+
+/*************************************************
+            FOOTER
+*************************************************/
+footer{
+    padding:1rem 2rem;
+    background: hsl(273, 3%, 93%);
+    display: flex;
+    flex-direction: column;
+    border-top: 10px solid hsl(239, 93%, 71%);
+    justify-content: space-between;
+}
+
+.comments{
+    display: flex;
+    justify-content: center;
+}
+
+.foot nav{
+     background-color: lightgrey;
+}
+.foot section{
+    border: .1rem solid black;
+    padding: 30px;
+    margin-bottom: 1rem;
+}
+.foot dl{
+     border: .1rem solid black;
+     text-align:center;
+}
+.foot dt{
+    font-size: 1.5rem;
+    padding: 1reml
+    text-decoration: underline;
+    font-weight: bolder;
+   
+}
+.foot dd{
+    padding: 5px;
+}
+.foot dd a,
+.foot dd a:visited{
+    
+}
+.foot dd a:active,
+.foot dd a:focus,
+.foot dd a:hover{
+    
+}
+/*************************************************
+            MEDIA QUERIES for layout
+*************************************************/
+@media (max-width: 599px) {
+
+    main h1,
+    h2 {
+        text-decoration: underline lightblue;
+        font-size: 2rem;
+        padding: 1rem;
+        font-weight: bolder;
+    }
+
+    header {
+        border-top: 1rem solid lightblue;
+    }
+
+    .mainnav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .main-link {
+        padding-left: 1rem;
+
+    }
+
+    footer {
+        border-top: 1rem solid lightblue;
+    }
+
+    .foot dt {
+        padding: 1rem;
+        font-size: 1.5rem;
+        text-decoration: underline lightblue;
+    }
+}
+
+@media (min-width: 600px) and (max-width:999px) {
+
+    main h1,
+    h2 {
+        text-decoration: underline purple;
+        font-size: 2rem;
+        padding: 1rem;
+        font-weight: bolder;
+    }
+
+    header {
+        border-top: 1rem solid purple;
+    }
+
+    footer {
+        border-top: 1rem solid purple;
+    }
+
+    .foot dt {
+        padding: 1rem;
+        font-size: 1.5rem;
+        text-decoration: underline purple;
+    }
+}
+
+@media (min-width: 1000px) {
+
+    main h1,
+    h2 {
+        text-decoration: underline green;
+        font-size: 2rem;
+        padding: 1rem;
+        font-weight: bolder;
+    }
+
+    header {
+        border-top: 1rem solid green;
+    }
+
+    .foot dt {
+        padding: 1rem;
+        font-size: 1.5rem;
+        text-decoration: underline green;
+    }
